@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "windows-driver-policy-auditor"
-version = "1.0.0"
+version = "1.1.0"
 description = "Read-only Windows driver policy and Code Integrity diagnostics"
 requires-python = ">=3.10"
 license = {text = "MIT"}

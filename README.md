@@ -25,6 +25,16 @@ python -m driver_policy_auditor offline tests\fixtures\codeintegrity.xml --html 
 
 O projeto não altera registro, BCD, políticas, serviços ou drivers e não permite drivers bloqueados.
 
+### Arquitetura
+
+![Fluxo de arquitetura](docs/architecture.svg)
+
+### Relatório de exemplo
+
+![Relatório HTML gerado apenas com fixtures sintéticas](docs/sample-report.png)
+
+O HTML correspondente está em [`examples/sample-report.html`](examples/sample-report.html).
+
 ## English
 
 A defensive, **read-only** Windows tool that explains why a kernel driver was blocked. It correlates VBS/HVCI state, Code Integrity events, SHA-256 hashes, and Authenticode status without disabling security controls.
