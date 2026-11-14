@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windows-driver-policy-auditor"
+version = "1.0.0"
+description = "Read-only Windows driver policy and Code Integrity diagnostics"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Ildosoft"}]
+
+[project.scripts]
+driver-policy-audit = "driver_policy_auditor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
